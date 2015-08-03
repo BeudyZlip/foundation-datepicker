@@ -2,14 +2,14 @@ THIS FORK
 =====================
 
 minViewMode Month
-
+```
 $('.monthpicker').fdatepicker({
     format : 'mm/yyyy',
     startView : 1,
     viewMode : 1,
     minViewMode : 1
 });
-
+```
 
 Foundation Datepicker
 =====================
