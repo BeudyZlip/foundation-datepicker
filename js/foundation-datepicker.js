@@ -48,6 +48,7 @@
 			this.forceParse = this.element.data('date-force-parse');
 		}
 
+		this.minViewMode = options.minViewMode || 0;
 
 		this.picker = $(DPGlobal.template)
 							.appendTo(this.isInline ? this.element : this.appendTo)
@@ -582,8 +583,20 @@
 									date: this.viewDate
 								});
 							}
-							this.showMode(-1);
-							this.fill();
+							if(this.viewMode == this.minViewMode){
+								var year = this.viewDate.getUTCFullYear(),
+									month = this.viewDate.getUTCMonth();
+								if (month == 11) {
+									month = 0;
+									year += 1;
+								} else {
+									month += 1;
+								}
+								this._setDate(UTCDate(year, month, 0,0,0,0,0));
+							}else{
+								this.showMode(-1);
+								this.fill();
+							}
 						}
 						break;
 					case 'td':

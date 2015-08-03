@@ -1,5 +1,19 @@
+THIS FORK
+=====================
+
+minViewMode Month
+
+$('.monthpicker').fdatepicker({
+    format : 'mm/yyyy',
+    startView : 1,
+    viewMode : 1,
+    minViewMode : 1
+});
+
+
 Foundation Datepicker
 =====================
+
 
 **Feel free to contribute! Fork, modify, and send me a pull request, I'll try my best to merge it as soon, as possible.**
 
@@ -21,19 +35,20 @@ Install via Bower or NPM
 
 `npm install foundation-datepicker`
 
-after running continue with step 3 from manual instalation. Files you should use are mentioned in step 2.
-
-Manual Installation and Setup
+Manual Installation
 -------------------
 
 1. download & unzip source from GitHub repository:
 http://foundation-datepicker.peterbeno.com/example.html
 
-2. copy the files `/js/foundation-datepicker.js` and `/stylesheets/foundation-datepicker.css`
-    somewhere into your project. Minified versions are also available.
+2. copy the files
+    3. **/js/foundation-datepicker.js**
+    4. **/stylesheets/foundation-datepicker.css**
+       somewhere into your project
+
 3. &lt;link&gt; and &lt;script&gt; them into your page
 
-4. to see the arrows and icons, please include **font-awesome** or **foundation icons**:
+4. to see the arrows and icons, please include **font-awesome** of **foundation icons**:
 
   http://zurb.com/playground/foundation-icons
 
@@ -54,25 +69,24 @@ $('.fdatepicker').fdatepicker({
 
 Available languages are:
 
-- Czech (cz)
-- Dutch (nl)
 - English (en) - default
 - French (fr)
-- German (de)
-- Greek (el)
-- Hungarian (hu)
-- Italian (it)
-- Norwegian (no)
 - Polish (pl)
+- Spanish (es)
 - Portugese (pt)
 - Portugese Brasil (pt_br)
+- Italian (it)
+- German (de)
 - Romanian (ro)
+- Hungarian (hu)
 - Russian (ru)
-- Slovak (sk)
-- Spanish (es)
-- Turkish (tr)
+- Czech (cz)
+- Dutch (nl)
+- Greek (el)
 - Ukrainian (uk)
-
+- Norwegian (no)
+- Turkish (tr)
+- Slovak (sk)
 
 Icons
 ------------------
@@ -93,7 +107,3 @@ Grunt is used.
 A note on forking:
 -------------------
 By forking this project you hereby grant permission for any commits to your fork to be merged back into this repository and, with attribution, be released under the terms of the Apache License.
-
-Issues
--------------------
-Before you submit a new issue, please check closed (maybe also open) issues [here](https://github.com/najlepsiwebdesigner/foundation-datepicker/issues?q=is%3Aissue+is%3Aclosed), maybe your problem was solved already. Thanks!
